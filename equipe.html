@@ -55,7 +55,7 @@
         <h3 class="font-weight-bold">Carlos Henrique Ernanny</h3>
         <p>Carlos Henrique é sócio fundador da C25. Antes disso, trabalhou por 20 anos nos Bancos Merrill Lynch, BTG Pactual e Santander nas áreas de Equity Derivatives, Equity Capital Markets e Investment Banking. 
           Entre 2020 e 2023 foi o Fundador e CEO da Troon Capital, um Multi Family Office independente, posteriormente adquirido pela Blue3 Investimentos. Carlos Henrique exerceu os cargos de Membro da Câmara Consultiva da B3 e de Conselheiro de Administração da ECT - Empresa Brasileira de Correios e Telégrafos (Correios).</p>
-        <a href="#">Leita mais +</a>
+        <a href="#" data-toggle="modal" data-target="#readMore" data-whatever="Carlos">Leia mais +</a>
       </div>
     </div>
     <div class="row">
@@ -65,7 +65,7 @@
       <div class="col-12 d-flex flex-column mt-5 gap-4 col-lg-6 mt-lg-0">
         <h3 class="font-weight-bold">Pedro da Rocha Lima</h3>
         <p>Pedro Rocha Lima é o sócio fundador da Capital 25. Dedicou 16 anos de sua carreira ao BTG Pactual, onde ingressou em 2007 e se tornou sócio em 2011. Atuou em diversas áreas, começando no Investment Banking, onde participou de operações no setor imobiliário, conduzindo parcerias como a WT-Goodman e transações para empresas como MRV e PDG.  Sua atuação incluiu IPOs de empresas como Amil, MPX e Santander Brasil, além de fusões e aquisições, como a assessoria à Perdigão na compra da Sadia e à Anglo American na aquisição de ativos da MMX por US$5.5 bilhões.</p>
-        <a href="#">Leita mais +</a>
+        <a href="#" data-toggle="modal" data-target="#readMore" data-whatever="Pedro">Leia mais +</a>
       </div>
     </div>
     <div class="row">
@@ -75,11 +75,26 @@
       <div class="col-12 d-flex flex-column mt-5 gap-4 col-lg-6 mt-lg-0">
         <h3 class="font-weight-bold">Marcelo Augusto Bellotti</h3>
         <p>Marcelo Bellotti é sócio fundador da C25. Antes disso e com uma experiência de de 15 anos no mercado de “Real Estate” se dedicou a diversos projetos, atuando como fundador/empreendedor no Brasil e no exterior, assumiu cargo de executivo (CEO) de uma companhia do setor, bem como desenvolveu recentemente trabalhos como consultor de incorporadoras de capital fechado e aberto.</p>
-        <a href="#">Leita mais +</a>
+        <a href="#" data-toggle="modal" data-target="#readMore" data-whatever="Marcelo">Leia mais +</a>
       </div>
     </div>
   </section>
   
+  <!-- Modal -->
+  <div class="modal fade" id="readMore" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body"></div>
+        </div>
+    </div>
+  </div>
+
   <section class="contact container text-center">
     <h4>
       Rua Surubim, nº 577, 10º andar, Cidade Monções, São Paulo, Estado de São Paulo, CEP 04571-050<br/>
@@ -94,6 +109,23 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    const teamMatesInfo = [
+      { shortName: 'Carlos', fullName: 'Carlos Henrique Ernanny', description: 'Carlos Henrique é sócio fundador da C25. Antes disso, trabalhou por 20 anos nos Bancos Merrill Lynch, BTG Pactual e Santander nas áreas de Equity Derivatives, Equity Capital Markets e Investment Banking.<br>Entre 2020 e 2023 foi o Fundador e CEO da Troon Capital, um Multi Family Office independente, posteriormente adquirido pela Blue3 Investimentos.<br>Carlos Henrique exerceu os cargos de Membro da Câmara Consultiva da B3 e de Conselheiro de Administração da ECT - Empresa Brasileira de Correios e Telégrafos (Correios).<br>Administrador de Empresas pela Faculdade Cândido Mendes no Rio de Janeiro e com especialização em Equity Derivatives pela New York University (NYU).' },
+      { shortName: 'Pedro', fullName: 'Pedro da Rocha Lima', description: 'Pedro Rocha Lima é o sócio fundador da Capital 25. Dedicou 16 anos de sua carreira ao BTG Pactual, onde ingressou em 2007 e se tornou sócio em 2011. Atuou em diversas áreas, começando no Investment Banking, onde participou de operações no setor imobiliário, conduzindo parcerias como a WT-Goodman e transações para empresas como MRV e PDG. Sua atuação incluiu IPOs de empresas como Amil, MPX e Santander Brasil, além de fusões e aquisições, como a assessoria à Perdigão na compra da Sadia e à Anglo American na aquisição de ativos da MMX por US$5.5 bilhões.<br>Posteriormente, Pedro assumiu a liderança das áreas de ALM, Corporate Finance e Relações com Investidores, onde esteve à frente de transações estratégicas, como as aquisições do BSI por CHF1.5 bilhões, Ariel Re, e Pan Seguros. Também liderou emissões de dívida, incluindo o Bônus Perpétuo de US$1.3 bilhão, além do IPO e follow-ons do Banco. Além disso, liderou reestruturações complexas como a Unit e o spin-off da ECTP, e a redução da participação e venda de ativos da BR Properties.<br>De abril de 2020 até sua saída em abril de 2023, Pedro atuou como head da unidade de seguros para varejo do BTG Pactual, acumulando a posição de CEO da Too Seguros, uma empresa controlada pelo BTG.<br>Pedro é formado em Administração de Empresas pela Fundação Getúlio Vargas e atualmente está cursando o Owner/President Management Program na Harvard Business School.' },
+      { shortName: 'Marcelo', fullName: 'Marcelo Augusto Bellotti', description: 'Empreendedor desde 2010, desenvolveu, estruturou e investiu em diversos projetos imobiliários no Brasil e no exterior.<br>Sócio fundador e diretor da 4Z, empresa que investidora em startups de sucesso como Paketa, Findup e outras.<br>Entre 2018 e 2021 foi CEO da Moving Imóveis, empresa controlada pelo Grupo Estadão e Engebanc.<br>Entre 2021 e 2023 trabalhou na Even e Melnick, liderando a área de gestão de portfolios, focado em investimentos e desinvestimentos.<br>Administrador de Empresas pela PUC - SP, e Master in Business Administration na área de Private Equity e Venture Capital pela FGV.' }
+    ];
+
+    $("#readMore").on('show.bs.modal', (event) => {
+      const button = $(event.relatedTarget);
+      const shortName = button.data('whatever');
+
+      const teamMateInfo = teamMatesInfo.find(teamMate => shortName === teamMate.shortName);
+
+      $('.modal-title').text(teamMateInfo.fullName);
+      $('.modal-body').html(teamMateInfo.description);
+    })
+  </script>
 </body>
 
 </html>
